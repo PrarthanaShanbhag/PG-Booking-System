@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PG</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="pg" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+</head>
+<body>
+<div class="banner page-head">
+	<div class="container">
+		<div class="header-nav">
+			<div class="logo">
+				<h1><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>PG Booking</a></h1>
+			</div>
+			<div class="navigation">
+				<span class="menu"><img src="images/menu.png" alt=""/></span>
+				<nav class="cl-effect-11" id="cl-effect-11">
+					<ul class="nav1">
+						<li><a href="index.html" data-hover="HOME">HOME</a></li>
+						<li><a href="about.html" data-hover="ABOUT">ABOUT</a></li>
+						<li><a href="reg.html" data-hover="REGISTER">REGISTER</a></li>
+						<li><a href="login.html" data-hover="LOGIN">LOGIN</a></li>
+						<li><a class="active" href="contact.html" data-hover="CONTACT">CONTACT</a></li>
+					</ul>
+				</nav>
+				<!-- script for menu -->
+					<script> 
+						$( "span.menu" ).click(function() {
+						$( "ul.nav1" ).slideToggle( 300, function() {
+						 // Animation complete.
+						});
+						});
+					</script>
+				<!-- //script for menu -->
+				
+			</div>
+			<div class="social-icons">
+				<ul>
+					<li><a href="#" class="f1"></a></li>
+					<li><a href="#" class="f2"></a></li>
+					<li><a href="#" class="f3"></a></li>
+					<li><a href="#" class="f4"></a></li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- //banner -->
+<!--contact-->
+<div class="contact">
+	<div class="container">
+		<h2 class="tittle-one">VIEW ON MAP</h2>
+		<div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124440.31543474956!2d74.7820224439503!3d12.923150189459914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4c37bf488f%3A0x827bbc7a74fcfe64!2sMangaluru%2C+Karnataka!5e0!3m2!1sen!2sin!4v1534006063321" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>		</div>
+		<div class="paragraph">
+			<p></p>
+		</div>
+		<div class="contact-form">
+			<h3 class="tittle">CONTACT US</h3>
+			 <h2>Mailing address</h2><br>
+        <p> 1546 & 1547, 19th Main Road, Sector 1,<br> HSR layout, Mangalore,<br> Karnataka, India 560102</p><br>
+
+      <h2>Any queries (Customer Care Helpline)</h2>
+      <p>Call: +91 8904242424</p><br>
+      <h2>Media queries</h2>
+      <p>Email: media@nestaway.com</p>
+		</div>
+	</div>
+</div>
+
+<!--//contact-->
+<!--footer-->
+	<div class="footer">
+		<div class="container">				 	
+			<div class="col-md-4 ftr_navi ftr">
+				<h3>NAVIGATION</h3>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="reg.html">Register</a></li>						
+					<li><a href="login.html">login</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 ftr_navi ftr">
+					 <h3>FACILITIES</h3>
+					 <ul>
+						 <li><a href="#">Double bedrooms</a></li>
+						 <li><a href="#">Single bedrooms</a></li>
+						 <li><a href="#">Connected rooms</a></li>
+					 </ul>
+			</div>
+			<div class="col-md-4 ftr_navi ftr">
+				<h3>GET IN TOUCH</h3>
+				<ul>
+					<li>street jump,</li>
+					<li>260-14 Mangalore, India</li>
+					<li>+919480640600</li>
+				</ul>
+			</div>
+			
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+</body>
+</html>

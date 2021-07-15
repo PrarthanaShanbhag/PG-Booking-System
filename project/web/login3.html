@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>LOGIN</title>
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/style2.css" rel='stylesheet' type='text/css'/><!-- style.css --> 
+<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<script src="js/jquery.min.js"></script>
+		<script>$(document).ready(function(c) {
+		$('.alert-close').on('click', function(c){
+			$('.main-agile').fadeOut('slow', function(c){
+				$('.main-agile').remove();
+			});
+		});	  
+	});
+	</script>
+</head>
+<body>
+	<h1>User Login Form</h1>
+	<div class="main-agile">
+		<div class="alert-close"> </div>
+		<div class="content-wthree">
+		<div class="circle-w3layouts"></div>
+			
+			<form action="login3.php" method="post">
+								<div class="inputs-w3ls">
+									<i class="fa fa-user" aria-hidden="true"></i>
+									<input type="text" name="log" placeholder="Username" required=""/>
+								</div>
+								<div class="inputs-w3ls">
+									<i class="fa fa-key" aria-hidden="true"></i>
+									<input type="password" name="pass" placeholder="Password" required=""/>
+								</div>
+									<input type="submit" value="LOGIN"> 
+																	</form>
+
+									<div class="wthree-text"> 
+										<ul> 
+											<li> <a href="reg.html">NOT REGISTERED YET?</a> </li>
+										</ul>
+									</div>  
+		</div>
+	</div>
+
+</body>
+</html>

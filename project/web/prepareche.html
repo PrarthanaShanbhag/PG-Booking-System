@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>LOGIN</title>
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/style3.css" rel='stylesheet' type='text/css'/><!-- style.css --> 
+<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<script src="js/jquery.min.js"></script>
+		<script>$(document).ready(function(c) {
+		$('.alert-close').on('click', function(c){
+			$('.main-agile').fadeOut('slow', function(c){
+				$('.main-agile').remove();
+			});
+		});	  
+	});
+	</script>
+</head>
+<body background="images/h.jpg">
+	<h1>Prepare Checklist</h1>
+	<div class="main-agile">
+		<div class="alert-close"> </div>
+		<div class="content-wthree">
+		<div class="circle-w3layouts"></div>
+			
+			<form action="check.php" method="post">
+								<div class="inputs-w3ls">
+									<i  aria-hidden="true"></i>
+									<input type="text" name="oid" placeholder="Owner ID" required=""/>
+								</div>
+								<div class="inputs-w3ls">
+									<i  aria-hidden="true"></i>
+									<input type="text" name="bid" placeholder="Booking Id" required=""/>
+								</div>
+									<input type="submit" value="UPDATE"> </form>
+									 
+								
+		</div>
+	</div>
+
+</body>
+</html>

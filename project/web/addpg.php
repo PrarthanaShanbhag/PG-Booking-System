@@ -1,0 +1,72 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="REG" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href="css/style1.css" rel="stylesheet" type="text/css" media="all" />
+
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+</head>
+<body>
+<div class="video"> 
+	<div class="center-container">
+	    <div class="w3ls-agileinfo">		</div>
+		<font color="white">
+		 <?php
+		 session_start();
+     $id=$_POST['id'];
+     $uname=$_POST['name'];
+     $no=$_POST['no'];
+     $type=$_POST['gender'];
+	 $rent=$_POST['rent'];
+	 $lid=$_POST['lid'];
+	 $oid=$_POST['oid'];
+	 $_SESSION['id']=$id;
+    $hostname="localhost";
+    $username="root";
+    $pass="";
+    $dbname="hpe";
+    $conn=mysqli_connect($hostname,$username,$pass,$dbname);
+    if(!$conn)
+    {
+        mysqli_connect_error("<br/><h1>connection failed");
+    }
+    else
+    {
+		
+        //$e=md5($pass);
+        $sql="insert into pg values ('$id','$uname','$no','$type','$rent','$lid','$oid');";
+		$result=mysqli_query($conn,$sql);
+        if(!$result)
+        echo "<br/><h1>Updation failed";
+        else
+        echo "<br/><h1>Successfully Updated</h1>";
+	}
+   ?>
+   
+   </font>
+		<br>
+		<br><br><br><br>
+		 <div class="bg-agile">
+			<div class="login-form">	
+				<form action="ownermenu.html" method="post">
+					<input type="submit" value="GO BACK TO HOME">
+				</form>	
+			</div>	
+		</div>
+	</div>	
+</div>	
+
+  
+
+</body>
+</html>
+   

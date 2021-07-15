@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>pg search</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/jquery-ui1.css">
+<script src="js/jquery-1.11.1.min.js"></script>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+</head>
+<body>
+<!-- banner -->
+<div class="banner page-head">
+	<div class="container">
+		<div class="header-nav">
+			<div class="logo">
+				<h1><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>PG Booking</a></h1>
+			</div>
+			<div class="navigation">
+				<span class="menu"><img src="images/menu.png" alt=""/></span>
+				<nav class="cl-effect-11" id="cl-effect-11">
+					<ul class="nav1">
+						<li><a href="index.html" data-hover="HOME">HOME</a></li>
+						<li><a href="about.html" data-hover="ABOUT">ABOUT</a></li>
+						<li><a href="reg.html" data-hover="REGISTER">REGISTER</a></li>
+						<li><a href="login.html" data-hover="LOGIN">LOGIN</a></li>
+						<li><a href="contact.html" data-hover="CONTACT">CONTACT</a></li>
+					</ul>
+				</nav>
+				<!-- script for menu -->
+					<script> 
+						$( "span.menu" ).click(function() {
+						$( "ul.nav1" ).slideToggle( 300, function() {
+						 // Animation complete.
+						});
+						});
+					</script>
+				<!-- //script for menu -->
+				
+			</div>
+			<div class="social-icons">
+				<ul>
+					<li><a href="#" class="f1"></a></li>
+					<li><a href="#" class="f2"></a></li>
+					<li><a href="#" class="f3"></a></li>
+					<li><a href="#" class="f4"></a></li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- //banner -->
+<!--search-->
+<div class="search-page">
+	<div class="container">	
+		<div class="search-grids">
+			<div class="col-md-3 search-grid-left">
+
+	
+				
+				<div class="menu-grid">
+					<ul class="menu_drop">
+						<li class="item1"><a href="#"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>Features</a>
+							<ul>
+								<li class="subitem1"><a href="#">Roll-in shower </a></li>
+								<li class="subitem2"><a href="#">Comfortable bathroom</a></li>
+								<li class="subitem3"><a href="#">WI-FI facility</a></li>
+							</ul>
+						</li>
+						<li class="item2"><a href="#"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>Facilities</a>
+							<ul>
+								<li class="subitem1"><a href="#">Childcare </a></li>
+								<li class="subitem2"><a href="#">Gym</a></li>
+								<li class="subitem3"><a href="#">Good food</a></li>
+								<li class="subitem3"><a href="#">Good environment</a></li>
+							</ul>
+						</li>
+						<li class="item3"><a href="#"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>Accommodation types</a>
+							<ul>
+								<li class="subitem1"><a href="#">PG for girls</a></li>
+								<li class="subitem2"><a href="#">PG for boys</a></li>
+								<li class="subitem3"><a href="#">PG for couple</a></li>
+							</ul>
+						</li>
+						<li class="item4"><a href="#"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>Landmarks</a>
+							<ul>
+								<li class="subitem1"><a href="#">City centers</a></li>
+								<li class="subitem2"><a href="#">Park View Centers</a></li>
+								<li class="subitem3"><a href="#">Land Park Centers</a></li>
+							</ul>
+						</li>
+						<li class="item5"><a href="#"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>Neighbourhood</a>
+							<ul>
+								<li class="subitem1"><a href="#">Diamond Park Colony</a></li>
+								<li class="subitem2"><a href="#">E Park Road</a></li>
+								<li class="subitem3"><a href="#">lake View Center</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!-- script for tabs -->
+						<script type="text/javascript">
+							$(function() {
+							
+								var menu_ul = $('.menu_drop > li > ul'),
+									   menu_a  = $('.menu_drop > li > a');
+								
+								menu_ul.hide();
+							
+								menu_a.click(function(e) {
+									e.preventDefault();
+									if(!$(this).hasClass('active')) {
+										menu_a.removeClass('active');
+										menu_ul.filter(':visible').slideUp('normal');
+										$(this).addClass('active').next().stop(true,true).slideDown('normal');
+									} else {
+										$(this).removeClass('active');
+										$(this).next().stop(true,true).slideUp('normal');
+									}
+								});
+							
+							});
+						</script>
+					<!-- script for tabs -->
+
+				</div>
+			</div>
+			<div class="col-md-9 search-grid-right">
+				<div class="hotel-rooms">
+					<div class="hotel-left">
+						<a href="login.html"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span>Grand Park Hyatt</a>
+						<p>Jl. Pahlawan VII No.247-A Sidoarjo-Surabaya,PVS</p>
+						<div class="hotel-left-grids">
+							<div class="hotel-left-one">
+								<a href="login.html"><img src="images/22.jpg" alt="" /></a>
+							</div>
+							<div class="hotel-left-two">
+								<div class="rating text-left">
+									<span>☆</span>
+									<span>☆</span>
+									<span>☆</span>
+									<span>☆</span>
+									<span>☆</span>
+								</div>
+								<a href="login.html"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Diamond Street</a>
+								<p>2.5 km to Hospital <span> 2.6 km to Temples</span></p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="hotel-right text-right">
+						<h4><span>Rs.8,750</span> Rs.4,850</h4>
+						<p>Best price</p>
+						<a href="login.html">Continue</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="hotel-rooms">
+					<div class="hotel-left">
+						<a href="login.html"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span>Royal Taj Coromandel</a>
+						<p>Jl. Pahlawan VII No.247-B Sidoarjo-Surabaya-Padil</p>
+						<div class="hotel-left-grids">
+							<div class="hotel-left-one">
+								<a href="login.html"><img src="images/24.jpg" alt="" /></a>
+							</div>
+							<div class="hotel-left-two">
+								<div class="rating text-left">
+									<span>☆</span>
+									<span>☆</span>
+									<span>☆</span>
+									<span>☆</span>
+									<span>☆</span>
+								</div>
+								<a href="login.html"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Diamond Street</a>
+								<p>3.5 km to Sed ut perspiciatis <span> 3.6 km to sit voluptatem</span></p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="hotel-right text-right">
+						<h4><span>Rs.3,350</span> Rs.1,450</h4>
+						<p>Best price</p>
+						<a href="login.html">Continue</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="hotel-rooms">
+					<div class="hotel-left">
+						<a href="login.html"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span>Crowne Plaza</a>
+						<p>Jl. Pahlawan VII No.247-c Sidoarjo-Surabaya-Agartala</p>
+						<div class="hotel-left-grids">
+							<div class="hotel-left-one">
+								<a href="login.html"><img src="images/23.jpg" alt="" /></a>
+							</div>
+							<div class="hotel-left-two">
+								<div class="rating text-left">
+									<span>☆</span>
+									<span>☆</span>
+									<span>☆</span>
+									<span>☆</span>
+									<span>☆</span>
+								</div>
+								<a href="login.html"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Diamond Street</a>
+								<p>4.5 km to Sed ut perspiciatis <span> 4.6 km to sit voluptatem</span></p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="hotel-right text-right">
+						<h4><span>Rs.9,750</span> Rs.5,700</h4>
+						<p>Best price</p>
+						<a href="login.html">Continue</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="hotel-rooms">
+					<div class="hotel-left">
+						<a href="login.html"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span>Modern Hilton Park</a>
+						<p>Jl. Pahlawan VII No.247-E Sidoarjo-Surabaya-Indo</p>
+						<div class="hotel-left-grids">
+							<div class="hotel-left-one">
+								<a href="login.html"><img src="images/21.jpg" alt="" /></a>
+							</div>
+							<div class="hotel-left-two">
+								<div class="rating text-left">
+									<span>☆</span>
+									<span>☆</span>
+									<span>☆</span>
+									<span>☆</span>
+									<span>☆</span>
+								</div>
+								<a href="login.html"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Diamond Street</a>
+								<p>7.5 km to Sed ut perspiciatis <span> 4.6 km to sit voluptatem</span></p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="hotel-right text-right">
+						<h4><span>Rs.9,750</span> Rs.6,800</h4>
+						<p>Best price</p>
+						<a href="login.html">Continue</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="hotel-rooms">
+					<div class="hotel-left">
+						<a href="login.html"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span>Grand park Hotel</a>
+						<p>Jl. Pahlawan VII No.247-F Sidoarjo-Surabaya-Indonesia</p>
+						<div class="hotel-left-grids">
+							<div class="hotel-left-one">
+								<a href="login.html"><img src="images/25.jpg" alt="" /></a>
+							</div>
+							<div class="hotel-left-two">
+								<div class="rating text-left">
+									<span>☆</span>
+									<span>☆</span>
+									<span>☆</span>
+									<span>☆</span>
+									<span>☆</span>
+								</div>
+								<a href="login.html"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Diamond Street</a>
+								<p>2.5 km to Sed ut perspiciatis <span> 2.6 km to sit voluptatem</span></p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="hotel-right text-right">
+						<h4><span>Rs.8,750</span> Rs.4,850</h4>
+						<p>Best price</p>
+						<a href="login.html">Continue</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="hotel-rooms">
+					<div class="hotel-left">
+						<a href="login.html"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span>Royal Park Hyatt</a>
+						<p>Jl. Pahlawan VII No.247-G Sidoarjo-Surabaya-Indonesia</p>
+						<div class="hotel-left-grids">
+							<div class="hotel-left-one">
+								<a href="login.html"><img src="images/26.jpg" alt="" /></a>
+							</div>
+							<div class="hotel-left-two">
+								<div class="rating text-left">
+									<span>☆</span>
+									<span>☆</span>
+									<span>☆</span>
+									<span>☆</span>
+									<span>☆</span>
+								</div>
+								<a href="login.html"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Diamond Street</a>
+								<p>5.5 km to Sed ut perspiciatis <span> 2.6 km to sit voluptatem</span></p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="hotel-right text-right">
+						<h4><span>Rs.4,650</span> Rs.2,650</h4>
+						<p>Best price</p>
+						<a href="login.html">Continue</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!--//search-->
+<!--footer-->
+	<div class="footer">
+		<div class="container">				 	
+			<div class="col-md-4 ftr_navi ftr">
+				<h3>NAVIGATION</h3>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="reg.html">Register</a></li>						
+					<li><a href="login.html">login</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 ftr_navi ftr">
+					 <h3>FACILITIES</h3>
+					 <ul>
+						 <li><a href="#">Double bedrooms</a></li>
+						 <li><a href="#">Single bedrooms</a></li>
+						 <li><a href="#">Connected rooms</a></li>
+					 </ul>
+			</div>
+			<div class="col-md-4 ftr_navi ftr">
+				<h3>GET IN TOUCH</h3>
+				<ul>
+					<li>street jump,</li>
+					<li>260-14 Mangalore, India</li>
+					<li>+919480640600</li>
+				</ul>
+			</div>
+			
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!--footer-->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+
+</body>
+</html>
